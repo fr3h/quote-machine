@@ -4,7 +4,7 @@ const TweetQuoteButton = ({ text, author }) => {
     const tweetUrl = `https://twitter.com/intent/tweet?text="${encodeURIComponent(text)}" - ${encodeURIComponent(author)}`;
 
     return (
-        <a id="tweet-quote" className="btn btn-info" href={tweetUrl} target="_blank" rel="noopener noreferrer">
+        <a id="tweet-quote" className="btn btn-info text-white" href={tweetUrl} target="_blank" rel="noopener noreferrer">
             <i className="fab fa-twitter"></i> Tweet
         </a>
     );
